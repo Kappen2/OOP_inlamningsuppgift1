@@ -1,5 +1,5 @@
-public class Palms extends Plants implements Feed { // Arv
-    Palms(double h) {
+public class Palmtree extends Plant implements Feed { // Arv
+    Palmtree(double h) {
         setHeight(h);
     } //konstruktor
     @Override

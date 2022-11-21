@@ -1,4 +1,4 @@
-public class Cactus extends Plants implements Feed { //Arv
+public class Cactus extends Plant implements Feed { //Arv
     Cactus(double h) {
         setHeight(h);
     } //konstruktor

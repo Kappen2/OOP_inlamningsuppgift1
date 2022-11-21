@@ -6,9 +6,9 @@ public class Program {
     private double outputAmount;
 
     Cactus Igge = new Cactus(0.2); //Skapar växterna
-    Palms Laura = new Palms(5.0);
-    Palms Putte = new Palms(1.0);
-    CarnivorousPlants Meatloaf = new CarnivorousPlants(0.7);
+    Palmtree Laura = new Palmtree(5.0);
+    Palmtree Putte = new Palmtree(1.0);
+    CarnivorousPlant Meatloaf = new CarnivorousPlant(0.7);
 
 
 

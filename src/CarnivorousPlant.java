@@ -1,5 +1,5 @@
-public class CarnivorousPlants extends Plants implements Feed { //Arv
-    CarnivorousPlants(double h) {
+public class CarnivorousPlant extends Plant implements Feed { //Arv
+    CarnivorousPlant(double h) {
         setHeight(h);
     } //konstruktor
     @Override

@@ -1,4 +1,4 @@
-public abstract class Plants{
+public abstract class Plant{
     private double height; //Inkapsling
     protected double water;
     protected String liquid;
