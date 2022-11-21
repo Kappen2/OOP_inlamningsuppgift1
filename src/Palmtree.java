@@ -1,6 +1,7 @@
 public class Palmtree extends Plant implements Feed { // Arv
-    Palmtree(double h) {
+    Palmtree(String n, double h) {
         setHeight(h);
+        setName(n);
     } //konstruktor
     @Override
     public void setLiquid() { //Polymorfism

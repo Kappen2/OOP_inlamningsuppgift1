@@ -1,6 +1,7 @@
 public class CarnivorousPlant extends Plant implements Feed { //Arv
-    CarnivorousPlant(double h) {
+    CarnivorousPlant(String n, double h) {
         setHeight(h);
+        setName(n);
     } //konstruktor
     @Override
     public void setLiquid() { //Polymorfism

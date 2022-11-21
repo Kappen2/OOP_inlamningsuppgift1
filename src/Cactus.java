@@ -1,7 +1,8 @@
 public class Cactus extends Plant implements Feed { //Arv
-    Cactus(double h) {
+    Cactus(String n, double h) { //konstruktor
         setHeight(h);
-    } //konstruktor
+        setName(n);
+    }
     @Override
     public void setLiquid() { //Polymorfism
         this.liquid = "mineralvatten";

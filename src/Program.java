@@ -5,10 +5,10 @@ public class Program {
     private String outputLiquid;
     private double outputAmount;
 
-    Cactus Igge = new Cactus(0.2); //Skapar växterna
-    Palmtree Laura = new Palmtree(5.0);
-    Palmtree Putte = new Palmtree(1.0);
-    CarnivorousPlant Meatloaf = new CarnivorousPlant(0.7);
+    Cactus Igge = new Cactus("Igge",0.2); //Skapar växterna
+    Palmtree Laura = new Palmtree("Laura", 5.0);
+    Palmtree Putte = new Palmtree("Putte", 1.0);
+    CarnivorousPlant Meatloaf = new CarnivorousPlant("Meatloaf", 0.7);
 
 
 
