@@ -1,3 +1,5 @@
+package PlantHotel;
+
 import javax.swing.*;
 
 public class Program {
@@ -14,13 +16,13 @@ public class Program {
 
     void program() {
         //Ger växterna rätt värden
-        Igge.waterPlant();
+        Igge.setLiquidAmount();
         Igge.setLiquid();
-        Laura.waterPlant();
+        Laura.setLiquidAmount();
         Laura.setLiquid();
-        Putte.waterPlant();
+        Putte.setLiquidAmount();
         Putte.setLiquid();
-        Meatloaf.waterPlant();
+        Meatloaf.setLiquidAmount();
         Meatloaf.setLiquid();
 
         try { //Kollar vilken växt som användaren har valt med Switch-case
@@ -30,19 +32,19 @@ public class Program {
                 input = input.toLowerCase();
                 switch (input) {
                     case "igge":
-                        outputAmount = Igge.water;
+                        outputAmount = Igge.liquidAmount;
                         outputLiquid = Igge.getLiquid();
                         break label;
                     case "laura":
-                        outputAmount = Laura.water;
+                        outputAmount = Laura.liquidAmount;
                         outputLiquid = Laura.getLiquid();
                         break label;
                     case "putte":
-                        outputAmount = Putte.water;
+                        outputAmount = Putte.liquidAmount;
                         outputLiquid = Putte.getLiquid();
                         break label;
                     case "meatloaf":
-                        outputAmount = Meatloaf.water;
+                        outputAmount = Meatloaf.liquidAmount;
                         outputLiquid = Meatloaf.getLiquid();
                         break label;
                     default:
@@ -55,6 +57,8 @@ public class Program {
         } catch (NullPointerException e1) {
             JOptionPane.showMessageDialog(null, "Du har valt att avsluta programmet");
             System.exit(0);
+        } catch (IllegalArgumentException e2) {
+            e2.printStackTrace();
         }
         JOptionPane.showMessageDialog(null, "Växten ska ha " + outputAmount + " liter " + outputLiquid);
     }

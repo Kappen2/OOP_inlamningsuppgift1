@@ -1,8 +1,10 @@
+package PlantHotel;
+
 public abstract class Plant{
     private String name;
     private double height; //Inkapsling
-    protected double water;
-    protected String liquid;
+    protected double liquidAmount;
+    protected String liquid = "";
     public void setName(String n) {
         this.name = n;
     }
@@ -16,10 +18,10 @@ public abstract class Plant{
             throw new IllegalArgumentException("Negativ höjd");
     }
     public double getHeight() {
-        return height;
+        return this.height;
     }
     public abstract void setLiquid();
     public String getLiquid() {
-        return liquid;
+        return this.liquid;
     }
 }
